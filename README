@@ -1,6 +1,6 @@
 NAME
-    Plack::Middleware::Auth::Bitcard - Bitcard authentication for Plack,
-    which I suppose is what you might have guessed from the name
+    Plack::Middleware::Auth::Bitcard - Bitcard authentication for Plack, which
+    I suppose is what you might have guessed from the name
 
 SYNOPSIS
        use strict;
@@ -32,8 +32,8 @@ DESCRIPTION
 
     So why use it? You probably shouldn't. An exception would be if you need
     login functionality for a website that is aimed at Perl developers. This
-    is because Bitcard is already used as login for "rt.cpan.org" and
-    "cpanratings.perl.org", so many Perl developers already have a login set
+    is because Bitcard is already used as login for `rt.cpan.org` and
+    `cpanratings.perl.org`, so many Perl developers already have a login set
     up.
 
   Simple usage
@@ -44,9 +44,9 @@ DESCRIPTION
     these, sign into <http://www.bitcard.org/>, go to your account settings,
     click on "My Sites", then add a new site. You will need to tell it your
     site's name, and a URL. This URL should be the "base" URL for your PSGI
-    app with "/_bitcard_boomerang" added to the end. For example, if you are
-    serving "http://bugs.example.com/" using Plack, then the URL you want is
-    "http://bugs.example.com/_bitcard_boomerang". Once you've entered that
+    app with `/_bitcard_boomerang` added to the end. For example, if you are
+    serving `http://bugs.example.com/` using Plack, then the URL you want is
+    `http://bugs.example.com/_bitcard_boomerang`. Once you've entered that
     information, the bitcard.org site will issue you with a token and API
     secret.
 
@@ -55,12 +55,12 @@ DESCRIPTION
     instantly redirected to bitcard.org to login.
 
     Once they've logged in, their Bitcard details, including their username
-    will be in "$env->{BITCARD}".
+    will be in `$env->{BITCARD}`.
 
   No login necessary
     You may want to specify that certain parts of your site do not require a
-    login; or perhaps visitors from certain IP addresses do not need to
-    login; or whatever.
+    login; or perhaps visitors from certain IP addresses do not need to login;
+    or whatever.
 
     This module accepts a coderef which can check these sorts of criteria:
 
@@ -75,11 +75,11 @@ DESCRIPTION
     for the given request.
 
   Showing different views of the site
-    Perhaps you don't always need people to login to your site. Maybe you
-    are happy for them to browse a public version of your site, and they
-    only need to login if they want to access the super-awesome features.
+    Perhaps you don't always need people to login to your site. Maybe you are
+    happy for them to browse a public version of your site, and they only need
+    to login if they want to access the super-awesome features.
 
-    In this case, you can provide an "on_unauth" action:
+    In this case, you can provide an `on_unauth` action:
 
        builder {
           enable "Auth::Bitcard",
@@ -88,7 +88,7 @@ DESCRIPTION
           $app;
        };
 
-    "on_unauth" is a PSGI app in its own right, and is expected to return a
+    `on_unauth` is a PSGI app in its own right, and is expected to return a
     PSGI-style arrayref.
 
   Displaying login/logout links
@@ -97,8 +97,8 @@ DESCRIPTION
        my $login_url    = $env->{BITCARD_URL}->(login_url => $env);
        my $logout_url   = $env->{BITCARD_URL}->(logout_url => $env);
 
-    There are also URLs for the user's account settings page, and to
-    register for a new bitcard account.
+    There are also URLs for the user's account settings page, and to register
+    for a new bitcard account.
 
        my $account_url  = $env->{BITCARD_URL}->(account_url => $env);
        my $register_url = $env->{BITCARD_URL}->(register_url => $env);
@@ -114,8 +114,8 @@ DESCRIPTION
 
 BUGS
     Please report any bugs to
-    <http://rt.cpan.org/Dist/Display.html?Queue=Plack-Middleware-Auth-Bitcar
-    d>.
+    <http://rt.cpan.org/Dist/Display.html?Queue=Plack-Middleware-Auth-Bitcard>
+    .
 
 SEE ALSO
     Authen::Bitcard.
@@ -126,8 +126,8 @@ AUTHOR
 COPYRIGHT AND LICENCE
     This software is copyright (c) 2013 by Toby Inkster.
 
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
+    This is free software; you can redistribute it and/or modify it under the
+    same terms as the Perl 5 programming language system itself.
 
 DISCLAIMER OF WARRANTIES
     THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED

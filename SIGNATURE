@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.70.
+signed via the Module::Signature module, version 0.73.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,48 +14,28 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 f8e326dc797be473b1ecdccd7779d1685a1a5a58 COPYRIGHT
-SHA1 588fe85f0e0ed3d4029e6238c4bccd583c006bd0 Changes
-SHA1 58e47fed556f626572681c48158a3ecd44ce179d HACKING
-SHA1 937d452c5c4069f4cda9ffaf45a33f1eb5f060e8 LICENSE
-SHA1 2f4925d1757364bbe612d59cb5b564d72095ecac MANIFEST
-SHA1 eddf2d35b410eebcbfdc7216b3bea8c7be3f6e10 META.ttl
-SHA1 32e526b254616818c22f015212bf02aea4e7a410 META.yml
-SHA1 58a95fcdff7eb200496e7b933b1c1a059e0a4bc7 Makefile.PL
-SHA1 55fff649ee297fb96e21fe433c925f183f803cb9 README
+SHA1 33317486c4fa2cf7fec85bf92ed38ac0f64233a0 CONTRIBUTING
+SHA1 c6fc90c5b57e039d6185f854c1d07b74e0fd1c82 COPYRIGHT
+SHA1 6bd7b17d81be63d08d4efa6cb80106e72887842c CREDITS
+SHA1 55abb168786bef11a36c64d0db8395e2415fd329 Changes
+SHA1 5a443b8acb92d29b0255c70bf04b0ccf40175379 INSTALL
+SHA1 34f5e12514b91055de4b164a1f2327ef5c30ba53 LICENSE
+SHA1 aa9ebb3a0feea7c868cfc21eb96adf24d713689c MANIFEST
+SHA1 dcfb6545393dc7fda2c62243135d839795e14ad3 META.json
+SHA1 e2967c0a2bfde30f52508a662881511cc6c8fc67 META.yml
+SHA1 a2528de8ac9287ad37a745fc0e855436e202fe96 Makefile.PL
+SHA1 8b689ff53412f0757a62211b9ca0af3cf3480898 README
+SHA1 fc933da566f6f0f3a770ae73786067edf2e4f45a dist.ini
+SHA1 9f9fa655ea295f06058e48a90c839abc49283273 doap.ttl
 SHA1 f5a72c37f29143d4a6e3384fafa8d6a6d112476b examples/advanced.psgi
 SHA1 0e60ff3db9adcf001f3b6644a06af0fe4ce1be18 examples/basic.psgi
-SHA1 06c410f05488c1612ed66b06d3a86b2580581e4a inc/Module/AutoInstall.pm
-SHA1 8a924add836b60fb23b25c8506d45945e02f42f4 inc/Module/Install.pm
-SHA1 61ab1dd37e33ddbe155907ce51df8a3e56ac8bbf inc/Module/Install/AutoInstall.pm
-SHA1 c04f94f91fa97b9f8cfb5a36071098ab0e6c78e3 inc/Module/Install/AutoManifest.pm
-SHA1 2d0fad3bf255f8c1e7e1e34eafccc4f595603ddc inc/Module/Install/Base.pm
-SHA1 f0e01fff7d73cd145fbf22331579918d4628ddb0 inc/Module/Install/Can.pm
-SHA1 7328966e4fda0c8451a6d3850704da0b84ac1540 inc/Module/Install/Fetch.pm
-SHA1 66d3d335a03492583a3be121a7d888f63f08412c inc/Module/Install/Include.pm
-SHA1 b62ca5e2d58fa66766ccf4d64574f9e1a2250b34 inc/Module/Install/Makefile.pm
-SHA1 1aa925be410bb3bfcd84a16985921f66073cc1d2 inc/Module/Install/Metadata.pm
-SHA1 3b9281ddf7dd6d6f5de0a9642c69333023193c80 inc/Module/Install/Package.pm
-SHA1 9de7b5129351499c048328dfa718d0eab557cf30 inc/Module/Install/TrustMetaYml.pm
-SHA1 e4196994fa75e98bdfa2be0bdeeffef66de88171 inc/Module/Install/Win32.pm
-SHA1 c3a6d0d5b84feb3280622e9599e86247d58b0d18 inc/Module/Install/WriteAll.pm
-SHA1 26d58a041cd6b3d21db98b32e8fd1841aae21204 inc/Module/Package.pm
-SHA1 63b942f1abf8f8cb3b468cc3a52d435650dfa042 inc/Module/Package/Dist/RDF.pm
-SHA1 ae92606512343264831f51fcf985b7f0b3e6e2ef inc/Scalar/Util.pm
-SHA1 feb933cefe2e3762e8322bd6071a2499f3440da1 inc/YAML/Tiny.pm
-SHA1 8105c0510a773b56840995fb4dd2dc64fe9ddaee inc/unicore/Name.pm
-SHA1 36df501c7c9b73c282c5174ed54d8283b2f2cbf2 inc/utf8.pm
-SHA1 66be8fd791169e754dbe0c3e3861eef2eeab715e lib/Plack/Middleware/Auth/Bitcard.pm
-SHA1 50748813d808ededd44e5ccace13cf806a3ab65d meta/changes.pret
-SHA1 73797b24245316f67f13f7383e916b6172b6a657 meta/doap.pret
-SHA1 a4dbaf95a810febf2b901e8b147d87f0f404fd9c meta/makefile.pret
-SHA1 a151cff74b5f29c00381a14d4ec8726e3763b6b2 meta/people.pret
+SHA1 fe301fdb5bd4af9607a2ae3867b95495572e69b9 lib/Plack/Middleware/Auth/Bitcard.pm
 SHA1 dbd89b8437dc2ded24182d49eb532f92bbe3f4a9 t/01basic.t
 SHA1 4a7419170f11bd4e6de612a07c10e5f21c92a192 t/02bitcard.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.11 (GNU/Linux)
+Version: GnuPG v1
 
-iEYEARECAAYFAlFF59EACgkQzr+BKGoqfTmg1gCgslWakApHTsMCAYLI87a3Q+2D
-VTQAnjeLozSfjRpnYOPIvWlyWHvpvqR+
-=n7JU
+iEYEARECAAYFAlQQ2jQACgkQzr+BKGoqfTkGiQCeMtnlAwxOKaX/DRxTaJK36YQ6
+kiUAoIF6GLCOuiNUgVMWksGG/bTUTSWb
+=WPkp
 -----END PGP SIGNATURE-----
